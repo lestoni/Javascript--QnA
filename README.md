@@ -1,7 +1,7 @@
 Javascript--QnA
 ===============
 
-1. When might type coercion occur? How to avoid it? How would you change
+01. When might type coercion occur? How to avoid it? How would you change
 a `falsey` or `truthy` into a real boolean?
 
 * Type coercion specifically occurs when using the `==` operator.
@@ -9,7 +9,7 @@ a `falsey` or `truthy` into a real boolean?
 * To convert a `falsey` or `truthy` value into boolean , explicitly wrap 
 * it using `Boolean()` as in `Boolean('foo')` or idiomatically prefix it with `!!` as in `!!'foo'`.
 
-2. Describe how variable scope works. Explain how to create a closure,
+02. Describe how variable scope works. Explain how to create a closure,
     using a self-executing function(also called IIFE: immediately-invoked
     function expression).
 
@@ -40,13 +40,13 @@ a `falsey` or `truthy` into a real boolean?
         * To avoid namespace collisions with other Javascript libraries. Common as a design pattern.
         * To avoid polluting the global scope.
 
-3. Briefly explain how *prototypal inheritance* is differs from class-based
+03. Briefly explain how *prototypal inheritance* is differs from class-based
     *classical inheritance*:
 
     + *Prototype chaining* is the primary method of inheritance in javascript.
     Where the prototype of one reference type can inherit from another prototype. Such that the newly created object inherit methods and properties from across the prototype chain.
 
-4. Describe how the **Module Pattern** works. Explain how the **revealing module pattern** expands upon it:
+04. Describe how the **Module Pattern** works. Explain how the **revealing module pattern** expands upon it:
     
     + The **module pattern** works in the principle of information hiding and providing a public interface. Javascript itself has no concept of explicit private or public members. With this pattern, all private members are defined inside an *Immediately invoked function expression* such that there is no access whatsoever and finally returning a interface which the users can interact with. Example:
 
