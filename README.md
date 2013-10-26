@@ -13,11 +13,12 @@ a `falsey` or `truthy` into a real boolean?
     using a self-executing function(also called IIFE: immediately-invoked
     function expression).
 
-    + Variable scope:
-        + scope of a variable is where you define it in your source code;
-        where the variables defined in the global scope become global variables and the ones defined inside of a function become local variables inside the local scope of the function.
+* Variable scope:
+    * scope of a variable is where you define it in your source code;
+    where the variables defined in the global scope become global variables 
+    and the ones defined inside of a function become local variables inside the local scope of the function.
 
-    + A closure is a function that is created inside another function,
+    * A closure is a function that is created inside another function,
         where it holds a reference to the outter function's variable 
         object. For example :
 
