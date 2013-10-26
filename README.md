@@ -4,9 +4,9 @@ Javascript--QnA
 1. When might type coercion occur? How to avoid it? How would you change
 a `falsey` or `truthy` into a real boolean?
 
-     - Type coercion specifically occurs when using the `==` operator.
-     - Use the `===` oprator to avoid type coercion.
-     - To convert a `falsey` or `truthy` value into boolean , explicitly wrap
+      Type coercion specifically occurs when using the `==` operator.
+      Use the `===` oprator to avoid type coercion.
+      To convert a `falsey` or `truthy` value into boolean , explicitly wrap
         it using `Boolean()` as in `Boolean('foo')` or idiomatically prefix it
         with `!!` as in `!!'foo'`.
 
