@@ -18,8 +18,8 @@ a `falsey` or `truthy` into a real boolean?
     where the variables defined in the global scope become global variables 
     and the ones defined inside of a function become local variables inside the local scope of the function.
 
-    * A closure is a function that is created inside another function,
-        where it holds a reference to the outter function's variable 
+* A closure is a function that is created inside another function,
+    where it holds a reference to the outter function's variable 
         object. For example :
 
         ```
@@ -36,9 +36,9 @@ a `falsey` or `truthy` into a real boolean?
             
         ```
 
-    + Immediately invoked function expressions(IIFE's) are commonly used to encapsulate a block of code: 
-        + To avoid namespace collisions with other Javascript libraries. Common as a design pattern.
-        + To avoid polluting the global scope.
+* Immediately invoked function expressions(IIFE's) are commonly used to encapsulate a block of code: 
+        * To avoid namespace collisions with other Javascript libraries. Common as a design pattern.
+        * To avoid polluting the global scope.
 
 3. Briefly explain how *prototypal inheritance* is differs from class-based
     *classical inheritance*:
