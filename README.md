@@ -1,3 +1,4 @@
+Inspired by [Jack Franklin](https://github.com/jackfranklin/javascript-quiz)
 Javascript--QnA.
 ================
 
