@@ -48,7 +48,7 @@ Javascript--QnA.
               sayHi: sayHi
             };
         });
- * The **Revealing pattern** on the hand still works on the same principle of module pattern but it's public interface is more verbose such that instead of returning the method's and properties as defined in module,
+ * The **Revealing pattern** on the hand still works on the same principle of module pattern but it's public interface is more comprehensible such that instead of returning the method's and properties as defined in module,
     you return them in a style that communicates the purpose instead of the implementation. Example:
 
        
@@ -197,7 +197,11 @@ Javascript--QnA.
  * 'foo' is aliased to the `window` object since the `this` keyword is resolved to the global object as the IIFE("immediately invoked function expression") is defined in the global namespace.
 
 13. In javascript (and the DOM), variables we consider universal are actually mutable: window, document, undefined. How would you write code to ensure these were predictably available for use? Meaning, assuming someone has injected this code, how would work around it? (Hint: See previous question):
- * Tricky one
+ * Some interpreters allow universable variables to be assignable , to ensure that our javascript code will work in allow host environments, it would be safe to encapsulate our code using an IIFE , then pass the mutable global variables as arguments as follows:
+
+          (function(window, document, undefined){
+              // safe scope code.  
+          })(window);
 14. In one line of code, how you would clone (make a copy of) an array?
     
           [1,2,2,3].map(function(val){
