@@ -282,3 +282,7 @@ Javascript--QnA.
     num.toFixed();  // returns 12
     num.toFixed(6); // returns 12.344556
  * The first example would be clear , as the variable name suggests, if the `my_string` is a number type or passed in either `parseInt` or `parseFloat` method to get the number equivalent.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LeToni/javascript--qna/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
